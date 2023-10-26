@@ -1,3 +1,6 @@
+#include <tuple>
+#ifndef SPOT_H
+#define SPOT_H
 class Spot {
 private:
     std::tuple<int, int> location;
@@ -6,15 +9,12 @@ private:
 public:
     // Constructor
     Spot(int x, int y, char category) : location(x, y), category(category) {}
-
-    // Virtual Destructor
-    virtual ~Spot() {}
-
-    // Getters
+    virtual ~Spot(){}
     std::tuple<int, int> getLoc() const { return location; }
     char getCategory() const { return category; }
 
-    // Settersss
+    // Setters
     void setLoc(int x, int y) { location = std::make_tuple(x, y); }
     void setCategory(char category_val) { category = category_val; }
 };
+#endif
