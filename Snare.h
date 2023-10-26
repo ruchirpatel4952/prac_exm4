@@ -18,4 +18,4 @@ public:
     }
 };
 
-#endif // SNARE_H
+#endif 

@@ -14,7 +14,7 @@ public:
     std::tuple<int, int> getLoc() const { return location; }
     char getCategory() const { return category; }
 
-    // Setters
+    // Settersss
     void setLoc(int x, int y) { location = std::make_tuple(x, y); }
     void setCategory(char category_val) { category = category_val; }
 };
